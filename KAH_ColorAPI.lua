@@ -1,17 +1,23 @@
 local colorAPI = {}
 
 colorAPI.color = function(Part, color, r)
-	if r then color = Color3.fromRGB(math.random(0,255),math.random(0,255),math.random(0,255)) end
-	local thread = coroutine.create(function() -- x3.5 speed boost
-		local Arguments = {
-			["Part"] = Part,
-			["Color"] = color,
-		}
-		game:GetService("Workspace")[game:GetService("Players").LocalPlayer.Name].PaintBucket
-			:WaitForChild("Remotes").ServerControls
-			:InvokeServer("PaintPart", Arguments)
+	if r and r == true then
+		color = Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))
+	end
+	task.spawn(function()
+		local s, e = pcall(function()
+			local Arguments = {
+				["Part"] = Part,
+				["Color"] = color,
+			}
+			game:GetService("Players").LocalPlayer.Character.PaintBucket
+				:WaitForChild("Remotes").ServerControls
+				:InvokeServer("PaintPart", Arguments)
+		end)
+		if not s then
+			warn(e)
+		end
 	end)
-	coroutine.resume(thread)
 end
 
 colorAPI.transformToColor3 = function(col)
@@ -21,27 +27,27 @@ colorAPI.transformToColor3 = function(col)
 	return Color3.new(r, g, b)
 end
 
-colorAPI.colorObbyBox = function(color,r) -- Default is "Teal"
+colorAPI.colorObbyBox = function(color, r)
 	for i, v in pairs(game.Workspace.Terrain["_Game"].Workspace["Obby Box"]:GetChildren()) do
-		colorAPI.color(v, color,r) -- colorAPI.transformToColor3(BrickColor.new("Bright red"))
+		colorAPI.color(v, color, r)
 	end
 end
 
-colorAPI.colorObbyBricks = function(color,r) -- Default is "Really red"
+colorAPI.colorObbyBricks = function(color, r)
 	for i, v in pairs(game.Workspace.Terrain["_Game"].Workspace["Obby"]:GetChildren()) do
 		colorAPI.color(v, color, r)
 	end
 end
 
-colorAPI.colorAdminDivs = function(color,r) -- Default is "Dark stone grey"
+colorAPI.colorAdminDivs = function(color, r)
 	for i, v in pairs(game.Workspace.Terrain["_Game"].Workspace["Admin Dividers"]:GetChildren()) do
-		colorAPI.color(v, color,r)
+		colorAPI.color(v, color, r)
 	end
 end
 
-colorAPI.colorPads = function(color,r) -- Default is "Bright green"
+colorAPI.colorPads = function(color, r)
 	for i, v in pairs(game.Workspace.Terrain["_Game"].Admin["Pads"]:GetChildren()) do
-		colorAPI.color(v.Head, color,r)
+		colorAPI.color(v.Head, color, r)
 	end
 end
 
@@ -54,8 +60,6 @@ colorAPI.colorHouse = function(arg, r)
 	local floorC = arg.floorC
 	local rooftsC = arg.rooftsC
 	local chiC = arg.chiC
-
-	-------------------------------------------------------------------- House (really messy ik) --------------------------------------------------------------------
 
 	for i, v in pairs(game.Workspace.Terrain["_Game"].Workspace["Basic House"]:GetChildren()) do
 		coroutine.wrap(function()
@@ -138,12 +142,12 @@ colorAPI.colorHouse = function(arg, r)
 				or v.Name == "SmoothBlockModel93"
 				or v.Name == "SmoothBlockModel98"
 			then
-				colorAPI.color(v, wallsC,r) -- Default is "Brick yellow"
-			end -- House walls
+				colorAPI.color(v, wallsC, r)
+			end
 
 			if v.Name == "SmoothBlockModel40" then
-				colorAPI.color(v, baseC,r) -- Default is "Bright green"
-			end -- House grass base
+				colorAPI.color(v, baseC, r)
+			end
 
 			if
 				v.Name == "SmoothBlockModel100"
@@ -242,8 +246,8 @@ colorAPI.colorHouse = function(arg, r)
 				or v.Name == "SmoothBlockModel95"
 				or v.Name == "SmoothBlockModel96"
 			then
-				colorAPI.color(v, roofC,r ) -- Default is "Bright red"
-			end -- House roof
+				colorAPI.color(v, roofC, r)
+			end
 
 			if
 				v.Name == "SmoothBlockModel10"
@@ -294,8 +298,8 @@ colorAPI.colorHouse = function(arg, r)
 				or v.Name == "SmoothBlockModel89"
 				or v.Name == "SmoothBlockModel99"
 			then
-				colorAPI.color(v, WANDDC, r) -- Default is "Dark orange"
-			end -- House windows and door outlines
+				colorAPI.color(v, WANDDC, r)
+			end
 
 			if
 				v.Name == "SmoothBlockModel1"
@@ -303,16 +307,16 @@ colorAPI.colorHouse = function(arg, r)
 				or v.Name == "SmoothBlockModel5"
 				or v.Name == "SmoothBlockModel9"
 			then
-				colorAPI.color(v, stairsC, r) -- Default is "Dark stone grey"
-			end -- House Stairs
+				colorAPI.color(v, stairsC, r)
+			end
 
 			if v.Name == "SmoothBlockModel112" then
-				colorAPI.color(v, floorC,r ) -- Default is "Medium blue"
-			end -- House floor
+				colorAPI.color(v, floorC, r)
+			end
 
 			if v.Name == "SmoothBlockModel52" or v.Name == "SmoothBlockModel97" then
-				colorAPI.color(v, rooftsC, r) -- Default is "Reddish brown"
-			end -- House roof thingys
+				colorAPI.color(v, rooftsC, r)
+			end
 
 			if
 				v.Name == "SmoothBlockModel160"
@@ -320,13 +324,13 @@ colorAPI.colorHouse = function(arg, r)
 				or v.Name == "SmoothBlockModel165"
 				or v.Name == "SmoothBlockModel178"
 			then
-				colorAPI.color(v, chiC,r) -- Default is "Sand red"
-			end -- Chi top part
+				colorAPI.color(v, chiC, r)
+			end
 		end)()
 	end
 end
 
-colorAPI.colorBuildingBricks = function(arg,r)
+colorAPI.colorBuildingBricks = function(arg, r)
 	local DarkStoneGrey = arg.DarkStoneGrey
 	local DeepBlue = arg.DeepBlue
 	local NY = arg.NY
@@ -337,12 +341,10 @@ colorAPI.colorBuildingBricks = function(arg,r)
 	local RR = arg.RR
 	local TP = arg.TP
 
-	-------------------------------------------------------------------- Building Bricks --------------------------------------------------------------------
-
 	for i, v in pairs(game.Workspace.Terrain["_Game"].Workspace["Building Bricks"]:GetChildren()) do
 		coroutine.wrap(function()
 			if v.Name == "Part29" or v.Name == "Part31" or v.Name == "Part55" then
-				colorAPI.color(v, DarkStoneGrey) -- Default is "Dark stone grey"
+				colorAPI.color(v, DarkStoneGrey)
 			end
 
 			if
@@ -352,7 +354,7 @@ colorAPI.colorBuildingBricks = function(arg,r)
 				or v.Name == "Part3"
 				or v.Name == "Part43"
 			then
-				colorAPI.color(v, DeepBlue,r) -- Default is "Deep blue"
+				colorAPI.color(v, DeepBlue, r)
 			end
 
 			if
@@ -362,11 +364,11 @@ colorAPI.colorBuildingBricks = function(arg,r)
 				or v.Name == "Part44"
 				or v.Name == "Part6"
 			then
-				colorAPI.color(v, NY,r) -- Default is "New Yeller"
+				colorAPI.color(v, NY, r)
 			end
 
 			if v.Name == "Part13" or v.Name == "Part21" or v.Name == "Part23" or v.Name == "Part7" then
-				colorAPI.color(v, IW,r) -- Default is "Institutional white"
+				colorAPI.color(v, IW, r)
 			end
 
 			if
@@ -376,7 +378,7 @@ colorAPI.colorBuildingBricks = function(arg,r)
 				or v.Name == "Part9"
 				or v.Name == "Part5"
 			then
-				colorAPI.color(v, LimeGreen,r ) -- Default is "Lime green"
+				colorAPI.color(v, LimeGreen, r)
 			end
 
 			if
@@ -406,11 +408,11 @@ colorAPI.colorBuildingBricks = function(arg,r)
 				or v.Name == "Part60"
 				or v.Name == "Part61"
 			then
-				colorAPI.color(v, MSG,r) -- Default is "Medium Stone grey"
+				colorAPI.color(v, MSG, r)
 			end
 
 			if v.Name == "Part14" or v.Name == "Part19" or v.Name == "Part2" or v.Name == "Part27" then
-				colorAPI.color(v, RB,r ) -- Default is "Really black"
+				colorAPI.color(v, RB, r)
 			end
 
 			if
@@ -420,7 +422,7 @@ colorAPI.colorBuildingBricks = function(arg,r)
 				or v.Name == "Part22"
 				or v.Name == "Part37"
 			then
-				colorAPI.color(v, RR,r) -- Default is "Really red"
+				colorAPI.color(v, RR, r)
 			end
 
 			if
@@ -430,11 +432,65 @@ colorAPI.colorBuildingBricks = function(arg,r)
 				or v.Name == "Part45"
 				or v.Name == "Part8"
 			then
-				colorAPI.color(v, TP,r) -- Default is "Toothpaste"
+				colorAPI.color(v, TP, r)
 			end
 		end)()
 	end
 end
 
+colorAPI.colorRegen = function(color, r)
+	if game.Workspace.Terrain._Game.Admin:FindFirstChild("Regen") then
+		colorAPI.color(game.Workspace.Terrain._Game.Admin:FindFirstChild("Regen"), color, r)
+	end
+end
+
+colorAPI.fixcolors = function()
+	task.spawn(function()
+		colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")))
+	end)
+
+	task.spawn(function()
+		colorAPI.colorObbyBricks(colorAPI.transformToColor3(BrickColor.new("Really red")))
+	end)
+
+	task.spawn(function()
+		colorAPI.colorAdminDivs(colorAPI.transformToColor3(BrickColor.new("Dark stone grey")))
+	end)
+
+	task.spawn(function()
+		colorAPI.colorPads(colorAPI.transformToColor3(BrickColor.new("Bright green")))
+	end)
+
+	task.spawn(function()
+		colorAPI.colorRegen(colorAPI.transformToColor3(BrickColor.new("Plum")))
+	end)
+
+	task.spawn(function()
+		colorAPI.colorBuildingBricks({
+			DarkStoneGrey = colorAPI.transformToColor3(BrickColor.new("Dark stone grey")),
+			DeepBlue = colorAPI.transformToColor3(BrickColor.new("Deep blue")),
+			NY = colorAPI.transformToColor3(BrickColor.new("New Yeller")),
+			IW = colorAPI.transformToColor3(BrickColor.new("Institutional white")),
+			LimeGreen = colorAPI.transformToColor3(BrickColor.new("Lime green")),
+			MSG = colorAPI.transformToColor3(BrickColor.new("Medium stone grey")),
+			RB = colorAPI.transformToColor3(BrickColor.new("Really black")),
+			TP = colorAPI.transformToColor3(BrickColor.new("Toothpaste")),
+			RR = colorAPI.transformToColor3(BrickColor.new("Really red")),
+		})
+	end)
+
+	task.spawn(function()
+		colorAPI.colorHouse({
+			wallsC = colorAPI.transformToColor3(BrickColor.new("Brick yellow")),
+			baseC = colorAPI.transformToColor3(BrickColor.new("Bright green")),
+			roofC = colorAPI.transformToColor3(BrickColor.new("Bright red")),
+			WANDDC = colorAPI.transformToColor3(BrickColor.new("Dark orange")),
+			stairsC = colorAPI.transformToColor3(BrickColor.new("Dark stone grey")),
+			floorC = colorAPI.transformToColor3(BrickColor.new("Medium blue")),
+			rooftsC = colorAPI.transformToColor3(BrickColor.new("Reddish brown")),
+			chiC = colorAPI.transformToColor3(BrickColor.new("Sand red")),
+		})
+	end)
+end
 
 return colorAPI
