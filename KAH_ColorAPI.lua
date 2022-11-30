@@ -493,4 +493,53 @@ colorAPI.fixcolors = function()
 	end)
 end
 
+colorAPI.randomcolors = function()
+	task.spawn(function()
+		colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")), true)
+	end)
+
+	task.spawn(function()
+		colorAPI.colorObbyBricks(colorAPI.transformToColor3(BrickColor.new("Really red")), true)
+	end)
+
+	task.spawn(function()
+		colorAPI.colorAdminDivs(colorAPI.transformToColor3(BrickColor.new("Dark stone grey")), true)
+	end)
+
+	task.spawn(function()
+		colorAPI.colorPads(colorAPI.transformToColor3(BrickColor.new("Bright green")), true)
+	end)
+
+	task.spawn(function()
+		colorAPI.colorRegen(colorAPI.transformToColor3(BrickColor.new("Plum")), true)
+	end)
+
+	task.spawn(function()
+		colorAPI.colorBuildingBricks({
+			DarkStoneGrey = colorAPI.transformToColor3(BrickColor.new("Dark stone grey")),
+			DeepBlue = colorAPI.transformToColor3(BrickColor.new("Deep blue")),
+			NY = colorAPI.transformToColor3(BrickColor.new("New Yeller")),
+			IW = colorAPI.transformToColor3(BrickColor.new("Institutional white")),
+			LimeGreen = colorAPI.transformToColor3(BrickColor.new("Lime green")),
+			MSG = colorAPI.transformToColor3(BrickColor.new("Medium stone grey")),
+			RB = colorAPI.transformToColor3(BrickColor.new("Really black")),
+			TP = colorAPI.transformToColor3(BrickColor.new("Toothpaste")),
+			RR = colorAPI.transformToColor3(BrickColor.new("Really red")),
+		}, true)
+	end)
+
+	task.spawn(function()
+		colorAPI.colorHouse({
+			wallsC = colorAPI.transformToColor3(BrickColor.new("Brick yellow")),
+			baseC = colorAPI.transformToColor3(BrickColor.new("Bright green")),
+			roofC = colorAPI.transformToColor3(BrickColor.new("Bright red")),
+			WANDDC = colorAPI.transformToColor3(BrickColor.new("Dark orange")),
+			stairsC = colorAPI.transformToColor3(BrickColor.new("Dark stone grey")),
+			floorC = colorAPI.transformToColor3(BrickColor.new("Medium blue")),
+			rooftsC = colorAPI.transformToColor3(BrickColor.new("Reddish brown")),
+			chiC = colorAPI.transformToColor3(BrickColor.new("Sand red")),
+		}, true)
+	end)
+end
+
 return colorAPI
