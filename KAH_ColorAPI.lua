@@ -495,6 +495,8 @@ colorAPI.fixcolors = function()
 			rooftsC = colorAPI.transformToColor3(BrickColor.new("Reddish brown")),
 			chiC = colorAPI.transformToColor3(BrickColor.new("Sand red")),
 		})
+			
+	colorAPI.colorBaseplate(colorAPI.transformToColor3(BrickColor.new("Bright Green")))
 	end)
 end
 
@@ -545,7 +547,6 @@ colorAPI.randomcolors = function()
 			chiC = colorAPI.transformToColor3(BrickColor.new("Sand red")),
 		}, true)
 	end)
-	colorAPI.colorBaseplate(colorAPI.transformToColor3(BrickColor.new("Bright Green")))
 end
 
 return colorAPI
