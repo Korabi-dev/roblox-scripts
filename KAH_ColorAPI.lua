@@ -451,7 +451,7 @@ end
 
 colorAPI.fixcolors = function()
 	task.spawn(function() 
-	colorAPI.colorBaseplate(Color3.new(75, 151, 75))
+	colorAPI.colorBaseplate(colorAPI.transformToColor3(Color3.fromRGB(75, 151, 75)))
 	end)
 	task.spawn(function()
 		colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")))
