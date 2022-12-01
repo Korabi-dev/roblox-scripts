@@ -2,7 +2,7 @@ local colorAPI = {}
 
 colorAPI.color = function(Part, color, r)
 	if r and r == true then
-		color = Color3.fromRGB(math.random(0, 255), math.random(0, 255), math.random(0, 255))
+		color = Color3.new(math.random(0, 255), math.random(0, 255), math.random(0, 255))
 	end
 	task.spawn(function()
 		local s, e = pcall(function()
