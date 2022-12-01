@@ -51,6 +51,11 @@ colorAPI.colorPads = function(color, r)
 	end
 end
 
+colorAPI.colorBaseplate = function(color, r) 
+	local bp = game:GetService("Workspace").Terrain._Game.Workspace:FindFirstChild("Baseplate")
+if bp then colorAPI.color(bp, color, r) end
+end
+
 colorAPI.colorHouse = function(arg, r)
 	local wallsC = arg.wallsC
 	local baseC = arg.baseC
