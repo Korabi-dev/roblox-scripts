@@ -545,6 +545,7 @@ colorAPI.randomcolors = function()
 			chiC = colorAPI.transformToColor3(BrickColor.new("Sand red")),
 		}, true)
 	end)
+	colorAPI.colorBaseplate(colorAPI.transformToColor3(BrickColor.new("Really Green")))
 end
 
 return colorAPI
