@@ -450,6 +450,9 @@ colorAPI.colorRegen = function(color, r)
 end
 
 colorAPI.fixcolors = function()
+	task.spawn(function() 
+	colorAPI.colorBaseplate(colorAPI.transformToColor3(BrickColor.new("Bright Green")))
+	end)
 	task.spawn(function()
 		colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")))
 	end)
@@ -495,8 +498,6 @@ colorAPI.fixcolors = function()
 			rooftsC = colorAPI.transformToColor3(BrickColor.new("Reddish brown")),
 			chiC = colorAPI.transformToColor3(BrickColor.new("Sand red")),
 		})
-			
-	colorAPI.colorBaseplate(colorAPI.transformToColor3(BrickColor.new("Bright Green")))
 	end)
 end
 
