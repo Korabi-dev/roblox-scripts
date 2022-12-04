@@ -51,6 +51,10 @@ colorAPI.colorPads = function(color, r)
 	end
 end
 
+colorAPI.colorLight = function(color, r) 
+colorAPI.color(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232, r)
+end
+
 colorAPI.colorBaseplate = function(color, r) 
 	local bp = game:GetService("Workspace").Terrain._Game.Workspace:FindFirstChild("Baseplate")
 if bp then colorAPI.color(bp, color, r) end
@@ -453,6 +457,9 @@ colorAPI.fixcolors = function()
 	task.spawn(function() 
 	colorAPI.colorBaseplate(colorAPI.transformToColor3(Color3.fromRGB(75, 151, 75)))
 	end)
+	task.spawn(function() 
+	colorAPI.colorLight(colorAPI.transformToColor3(Color3.fromRGB(0, 100, 0)))
+	end)
 	task.spawn(function()
 		colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")))
 	end)
@@ -464,7 +471,7 @@ colorAPI.fixcolors = function()
 	task.spawn(function()
 		colorAPI.colorAdminDivs(colorAPI.transformToColor3(BrickColor.new("Dark stone grey")))
 	end)
-
+	
 	task.spawn(function()
 		colorAPI.colorPads(colorAPI.transformToColor3(BrickColor.new("Bright green")))
 	end)
@@ -505,7 +512,9 @@ colorAPI.randomcolors = function()
 	task.spawn(function()
 		colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")), true)
 	end)
-
+	task.spawn(function() 
+	colorAPI.colorLight(colorAPI.transformToColor3(Color3.fromRGB(0, 100, 0)), true)
+	end)
 	task.spawn(function()
 		colorAPI.colorObbyBricks(colorAPI.transformToColor3(BrickColor.new("Really red")), true)
 	end)
