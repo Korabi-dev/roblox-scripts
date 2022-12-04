@@ -52,7 +52,7 @@ colorAPI.colorPads = function(color, r)
 end
 
 colorAPI.colorLight = function(color, r) 
-colorAPI.color(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232, r)
+colorAPI.color(game:GetService("Workspace").Terrain["_Game"].Workspace["Basic House"].SmoothBlockModel232, color, r)
 end
 
 colorAPI.colorBaseplate = function(color, r) 
