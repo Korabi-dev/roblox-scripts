@@ -1,0 +1,1032 @@
+{
+    "persons": [
+        {
+            "name": "commands",
+            "args": []
+        },
+        {
+            "name": "fix",
+            "args": []
+        },
+        {
+            "name": "kill",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "heal",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "damage",
+            "args": [
+                "Person299",
+                "50"
+            ]
+        },
+        {
+            "name": "health",
+            "args": [
+                "Person299",
+                "999999"
+            ]
+        },
+        {
+            "name": "explode",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "rocket",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "unrocket",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "removetools",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "sit",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "jump",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "stand",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "part",
+            "args": [
+                "4",
+                "1",
+                "2"
+            ]
+        },
+        {
+            "name": "respawn",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "jail",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "unjail",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "punish",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "unpunish",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "teleport",
+            "args": [
+                "Person299",
+                "nccvoyager"
+            ]
+        },
+        {
+            "name": "control",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "time",
+            "args": [
+                "15"
+            ]
+        },
+        {
+            "name": "ambient",
+            "args": [
+                "255",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "name": "outdoorambient",
+            "args": [
+                "255",
+                "0",
+                "0"
+            ]
+        },
+        {
+            "name": "fogend",
+            "args": [
+                "0"
+            ]
+        },
+        {
+            "name": "fogstart",
+            "args": [
+                "0"
+            ]
+        },
+        {
+            "name": "unblind",
+            "args": [
+                "me"
+            ]
+        },
+        {
+            "name": "nograv",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "antigrav",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "grav",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "highrav",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "setgrav",
+            "args": [
+                "Person299",
+                "-196"
+            ]
+        },
+        {
+            "name": "trip",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "walkspeed",
+            "args": [
+                "Person299",
+                "99"
+            ]
+        }
+    ],
+    "kohls": [
+        {
+            "name": "commands",
+            "args": []
+        },
+        {
+            "name": "clear",
+            "args": []
+        },
+        {
+            "name": "fix",
+            "args": []
+        },
+        {
+            "name": "logs",
+            "args": []
+        },
+        {
+            "name": "m",
+            "args": [
+                "msg"
+            ]
+        },
+        {
+            "name": "h",
+            "args": [
+                "msg"
+            ]
+        },
+        {
+            "name": "kill",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "respawn",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "reload",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "paint",
+            "args": [
+                "plr",
+                "color"
+            ]
+        },
+        {
+            "name": "unpaint",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "powerjump",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "normaljump",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "glow",
+            "args": [
+                "plr",
+                "num",
+                "num",
+                "num"
+            ]
+        },
+        {
+            "name": "unglow",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "trip",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "skydive",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unskydive",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "size",
+            "args": [
+                "plr",
+                "num"
+            ]
+        },
+        {
+            "name": "unsize",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "stun",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unstun",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "jump",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "sit",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "trail",
+            "args": [
+                "plr",
+                "color"
+            ]
+        },
+        {
+            "name": "untrail",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "particle",
+            "args": [
+                "plr",
+                "name"
+            ]
+        },
+        {
+            "name": "unparticle",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "invisible",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "visible",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "explode",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "bonfire",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "fire",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unfire",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "smoke",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unsmoke",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "sparkles",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unsparkle",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "ff",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unff",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "punish",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unpunish",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "freeze",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "thaw",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "heal",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "god",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "ungod",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "ambient",
+            "args": [
+                "num",
+                "num",
+                "num"
+            ]
+        },
+        {
+            "name": "outdoorambient",
+            "args": [
+                "num",
+                "num",
+                "num"
+            ]
+        },
+        {
+            "name": "colorshiftbottom",
+            "args": [
+                "num",
+                "num",
+                "num"
+            ]
+        },
+        {
+            "name": "colorshifttop",
+            "args": [
+                "num",
+                "num",
+                "num"
+            ]
+        },
+        {
+            "name": "brightness",
+            "args": [
+                "num"
+            ]
+        },
+        {
+            "name": "time",
+            "args": [
+                "num"
+            ]
+        },
+        {
+            "name": "fogcolor",
+            "args": [
+                "num",
+                "num",
+                "num"
+            ]
+        },
+        {
+            "name": "fogend",
+            "args": [
+                "num"
+            ]
+        },
+        {
+            "name": "fogstart",
+            "args": [
+                "num"
+            ]
+        },
+        {
+            "name": "removetools",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "damage",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "grav",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "setgrav",
+            "args": [
+                "plr",
+                "num"
+            ]
+        },
+        {
+            "name": "nograv",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "health",
+            "args": [
+                "plr",
+                "num"
+            ]
+        },
+        {
+            "name": "speed",
+            "args": [
+                "plr",
+                "num"
+            ]
+        },
+        {
+            "name": "name",
+            "args": [
+                "plr",
+                "name"
+            ]
+        },
+        {
+            "name": "unname",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "teleport",
+            "args": [
+                "plr",
+                "plr"
+            ]
+        },
+        {
+            "name": "infect",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "rainbowify",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "flashify",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "noobify",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "ghostify",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "goldify",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "shiny",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "normal",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "package",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "unpackage",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "blind",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unblind",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "guifix",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "fling",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "seizure",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "music",
+            "args": [
+                "num"
+            ]
+        },
+        {
+            "name": "stopmusic",
+            "args": []
+        },
+        {
+            "name": "lock",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unlock",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "removelimbs",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "jail",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unjail",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "fly",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unfly",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "noclip",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "clip",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "pm",
+            "args": [
+                "plr",
+                "msg"
+            ]
+        },
+        {
+            "name": "dog",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "undog",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "creeper",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "uncreeper",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "char",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "unchar",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "rank",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "sword",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "powerjump",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "bighead",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "normalhead",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "minihead",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "spin",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "disco",
+            "args": []
+        },
+        {
+            "name": "flash",
+            "args": []
+        },
+        {
+            "name": "musiclist",
+            "args": []
+        },
+        {
+            "name": "packagelist",
+            "args": []
+        },
+        {
+            "name": "facelist",
+            "args": []
+        },
+        {
+            "name": "cape",
+            "args": [
+                "plr",
+                "color"
+            ]
+        },
+        {
+            "name": "uncape",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "hat",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "unspin",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "undisco",
+            "args": []
+        },
+        {
+            "name": "unflash",
+            "args": []
+        },
+        {
+            "name": "package",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "unpackage",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "gear",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "hat",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "unhat",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "shirt",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "unshirt",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "tshirt",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "untshirt",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "pants",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "unpants",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "face",
+            "args": [
+                "plr",
+                "id"
+            ]
+        },
+        {
+            "name": "swagify",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "clone",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "unclone",
+            "args": [
+                "plr"
+            ]
+        },
+        {
+            "name": "removejails",
+            "args": []
+        },
+        {
+            "name": "removeclones",
+            "args": []
+        },
+        {
+            "args": []
+        }
+    ]
+}
