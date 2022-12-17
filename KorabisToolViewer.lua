@@ -1,5 +1,4 @@
-local r = {}
-r.load = coroutine.wrap(function()
+
 	local BackpackViewer = Instance.new("ScreenGui")
 
 	local Frame = Instance.new("Frame")
@@ -311,6 +310,3 @@ r.load = coroutine.wrap(function()
 	end)
 
 	print("\n\nLoaded Korabi's Backpack Viewer\n\nPress B to toggle\n\nCredits to Tech for the original idea")
-end)
-
-return r
