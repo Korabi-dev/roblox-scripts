@@ -1,6 +1,6 @@
 coroutine.wrap(function()
 	local BackpackViewer = Instance.new("ScreenGui")
-
+	BackpackViewer.ResetOnSpawn = false
 	local Frame = Instance.new("Frame")
 
 	local TextLabel = Instance.new("TextLabel")
