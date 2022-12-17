@@ -1,4 +1,4 @@
-
+coroutine.wrap(function()
 	local BackpackViewer = Instance.new("ScreenGui")
 
 	local Frame = Instance.new("Frame")
@@ -282,7 +282,7 @@
 
 				gui.Frame.bp.Visible = true
 
-				for i, v: Tool in next, plr.Backpack:GetChildren() do
+				for i, v in next, plr.Backpack:GetChildren() do
 					processtool(v, false)
 				end
 
@@ -310,3 +310,4 @@
 	end)
 
 	print("\n\nLoaded Korabi's Backpack Viewer\n\nPress B to toggle\n\nCredits to Tech for the original idea")
+end)()
