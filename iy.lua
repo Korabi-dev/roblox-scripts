@@ -137,9 +137,9 @@ PopupText = Instance.new("TextLabel")
 Exit = Instance.new("TextButton")
 ImageLabel_2 = Instance.new("ImageLabel")
 background = Instance.new("Frame")
-chat = Instance.new("Frame")
+cchat = Instance.new("Frame")
 Clear = Instance.new("TextButton")
-SaveChatlogs = Instance.new("TextButton")
+Savecchatlogs = Instance.new("TextButton")
 Toggle = Instance.new("TextButton")
 scroll_2 = Instance.new("ScrollingFrame")
 join = Instance.new("Frame")
@@ -147,7 +147,7 @@ Toggle_2 = Instance.new("TextButton")
 Clear_2 = Instance.new("TextButton")
 scroll_3 = Instance.new("ScrollingFrame")
 listlayout = Instance.new("UIListLayout",scroll_3)
-selectChat = Instance.new("TextButton")
+selectcchat = Instance.new("TextButton")
 selectJoin = Instance.new("TextButton")
 
 function randomString()
@@ -1644,18 +1644,18 @@ background.Position = UDim2.new(0, 0, 1, 0)
 background.Size = UDim2.new(0, 338, 0, 245)
 background.ZIndex = 10
 
-chat.Name = "chat"
-chat.Parent = background
-chat.Active = true
-chat.BackgroundColor3 = Color3.new(0.141176, 0.141176, 0.145098)
-chat.BorderSizePixel = 0
-chat.ClipsDescendants = true
-chat.Size = UDim2.new(0, 338, 0, 245)
-chat.ZIndex = 10
-table.insert(shade1,chat)
+cchat.Name = "cchat"
+cchat.Parent = background
+cchat.Active = true
+cchat.BackgroundColor3 = Color3.new(0.141176, 0.141176, 0.145098)
+cchat.BorderSizePixel = 0
+cchat.ClipsDescendants = true
+cchat.Size = UDim2.new(0, 338, 0, 245)
+cchat.ZIndex = 10
+table.insert(shade1,cchat)
 
 Clear.Name = "Clear"
-Clear.Parent = chat
+Clear.Parent = cchat
 Clear.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.184314)
 Clear.BorderSizePixel = 0
 Clear.Position = UDim2.new(0, 5, 0, 220)
@@ -1668,22 +1668,22 @@ Clear.TextColor3 = Color3.new(1, 1, 1)
 table.insert(shade2,Clear)
 table.insert(text1,Clear)
 
-SaveChatlogs.Name = "SaveChatlogs"
-SaveChatlogs.Parent = chat
-SaveChatlogs.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.184314)
-SaveChatlogs.BorderSizePixel = 0
-SaveChatlogs.Position = UDim2.new(0, 258, 0, 220)
-SaveChatlogs.Size = UDim2.new(0, 75, 0, 20)
-SaveChatlogs.ZIndex = 10
-SaveChatlogs.Font = Enum.Font.SourceSans
-SaveChatlogs.FontSize = Enum.FontSize.Size14
-SaveChatlogs.Text = "Save To .txt"
-SaveChatlogs.TextColor3 = Color3.new(1, 1, 1)
-table.insert(shade2,SaveChatlogs)
-table.insert(text1,SaveChatlogs)
+Savecchatlogs.Name = "Savecchatlogs"
+Savecchatlogs.Parent = cchat
+Savecchatlogs.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.184314)
+Savecchatlogs.BorderSizePixel = 0
+Savecchatlogs.Position = UDim2.new(0, 258, 0, 220)
+Savecchatlogs.Size = UDim2.new(0, 75, 0, 20)
+Savecchatlogs.ZIndex = 10
+Savecchatlogs.Font = Enum.Font.SourceSans
+Savecchatlogs.FontSize = Enum.FontSize.Size14
+Savecchatlogs.Text = "Save To .txt"
+Savecchatlogs.TextColor3 = Color3.new(1, 1, 1)
+table.insert(shade2,Savecchatlogs)
+table.insert(text1,Savecchatlogs)
 
 Toggle.Name = "Toggle"
-Toggle.Parent = chat
+Toggle.Parent = cchat
 Toggle.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.184314)
 Toggle.BorderSizePixel = 0
 Toggle.Position = UDim2.new(0, 60, 0, 220)
@@ -1697,7 +1697,7 @@ table.insert(shade2,Toggle)
 table.insert(text1,Toggle)
 
 scroll_2.Name = "scroll"
-scroll_2.Parent = chat
+scroll_2.Parent = cchat
 scroll_2.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.184314)
 scroll_2.BorderSizePixel = 0
 scroll_2.Position = UDim2.new(0, 5, 0, 25)
@@ -1763,19 +1763,19 @@ scroll_3.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
 table.insert(scroll,scroll_3)
 table.insert(shade2,scroll_3)
 
-selectChat.Name = "selectChat"
-selectChat.Parent = background
-selectChat.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.184314)
-selectChat.BorderSizePixel = 0
-selectChat.Position = UDim2.new(0, 5, 0, 5)
-selectChat.Size = UDim2.new(0, 164, 0, 20)
-selectChat.ZIndex = 10
-selectChat.Font = Enum.Font.SourceSans
-selectChat.FontSize = Enum.FontSize.Size14
-selectChat.Text = "Chat Logs"
-selectChat.TextColor3 = Color3.new(1, 1, 1)
-table.insert(shade2,selectChat)
-table.insert(text1,selectChat)
+selectcchat.Name = "selectcchat"
+selectcchat.Parent = background
+selectcchat.BackgroundColor3 = Color3.new(0.180392, 0.180392, 0.184314)
+selectcchat.BorderSizePixel = 0
+selectcchat.Position = UDim2.new(0, 5, 0, 5)
+selectcchat.Size = UDim2.new(0, 164, 0, 20)
+selectcchat.ZIndex = 10
+selectcchat.Font = Enum.Font.SourceSans
+selectcchat.FontSize = Enum.FontSize.Size14
+selectcchat.Text = "cchat Logs"
+selectcchat.TextColor3 = Color3.new(1, 1, 1)
+table.insert(shade2,selectcchat)
+table.insert(text1,selectcchat)
 
 selectJoin.Name = "selectJoin"
 selectJoin.Parent = background
@@ -1906,7 +1906,7 @@ SoundService = game:GetService("SoundService")
 Teams = game:GetService("Teams")
 StarterPlayer = game:GetService("StarterPlayer")
 InsertService = game:GetService("InsertService")
-ChatService = game:GetService("Chat")
+cchatService = game:GetService("cchat")
 ProximityPromptService = game:GetService("ProximityPromptService")
 StatsService = game:GetService("Stats")
 
@@ -2708,7 +2708,7 @@ reference = (function()
 		{108,"Frame",{BackgroundColor3=Color3.new(0.1803921610117,0.1803921610117,0.1843137294054),BorderSizePixel=0,Name="Line",Parent={105},Position=UDim2.new(0,10,1,-1),Size=UDim2.new(1,-20,0,1),ZIndex=10,}},
 		{109,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Text",Parent={105},Position=UDim2.new(0,8,0,70),Size=UDim2.new(1,-8,0,48),Text="Some events may send arguments; you can use them in your event command by using $ followed by the argument number ($1, $2, etc). You can find out the order and types of these arguments by looking at the settings of the event command.",TextColor3=Color3.new(1,1,1),TextSize=14,TextWrapped=true,TextXAlignment=0,ZIndex=10,}},
 		{110,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=4,Name="Text",Parent={105},Position=UDim2.new(0,8,0,130),Size=UDim2.new(1,-8,0,16),Text="Example:",TextColor3=Color3.new(1,1,1),TextSize=14,TextWrapped=true,TextXAlignment=0,TextYAlignment=0,ZIndex=10,}},
-		{111,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Text",Parent={105},Position=UDim2.new(0,8,0,148),Size=UDim2.new(1,-8,0,16),Text="Setting up 'goto $1' on the OnChatted event will teleport you to any player that chats.",TextColor3=Color3.new(1,1,1),TextSize=14,TextWrapped=true,TextXAlignment=0,TextYAlignment=0,ZIndex=10,}},
+		{111,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Text",Parent={105},Position=UDim2.new(0,8,0,148),Size=UDim2.new(1,-8,0,16),Text="Setting up 'goto $1' on the Oncchatted event will teleport you to any player that cchats.",TextColor3=Color3.new(1,1,1),TextSize=14,TextWrapped=true,TextXAlignment=0,TextYAlignment=0,ZIndex=10,}},
 		{112,"Frame",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Name="Section",Parent={7},Size=UDim2.new(1,0,0,105),ZIndex=10,}},
 		{113,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=4,Name="Header",Parent={112},Position=UDim2.new(0,8,0,5),Size=UDim2.new(1,-8,0,20),Text="Get Further Help",TextColor3=Color3.new(1,1,1),TextSize=20,TextXAlignment=0,ZIndex=10,}},
 		{114,"TextLabel",{BackgroundColor3=Color3.new(1,1,1),BackgroundTransparency=1,Font=3,Name="Text",Parent={112},Position=UDim2.new(0,8,0,30),Size=UDim2.new(1,-8,0,32),Text="You can join the Discord server to get support with IY,  and read up on more documentation such as the Plugin API.",TextColor3=Color3.new(1,1,1),TextSize=14,TextWrapped=true,TextXAlignment=0,ZIndex=10,}},
@@ -3738,25 +3738,25 @@ Toggle_2.MouseButton1Down:Connect(function()
 	end
 end)
 
-selectChat.MouseButton1Down:Connect(function()
+selectcchat.MouseButton1Down:Connect(function()
 	join.Visible = false
-	chat.Visible = true
-	table.remove(shade3,table.find(shade3,selectChat))
+	cchat.Visible = true
+	table.remove(shade3,table.find(shade3,selectcchat))
 	table.remove(shade2,table.find(shade2,selectJoin))
-	table.insert(shade2,selectChat)
+	table.insert(shade2,selectcchat)
 	table.insert(shade3,selectJoin)
 	selectJoin.BackgroundColor3 = currentShade3
-	selectChat.BackgroundColor3 = currentShade2
+	selectcchat.BackgroundColor3 = currentShade2
 end)
 
 selectJoin.MouseButton1Down:Connect(function()
-	chat.Visible = false
+	cchat.Visible = false
 	join.Visible = true	
 	table.remove(shade3,table.find(shade3,selectJoin))
-	table.remove(shade2,table.find(shade2,selectChat))
+	table.remove(shade2,table.find(shade2,selectcchat))
 	table.insert(shade2,selectJoin)
-	table.insert(shade3,selectChat)
-	selectChat.BackgroundColor3 = currentShade3
+	table.insert(shade3,selectcchat)
+	selectcchat.BackgroundColor3 = currentShade3
 	selectJoin.BackgroundColor3 = currentShade2
 end)
 
@@ -3775,12 +3775,12 @@ local CleanFileName = function(str)
 	return gsub(str, "[*\\?:<>|]+", "")
 end
 
-SaveChatlogs.MouseButton1Down:Connect(function()
+Savecchatlogs.MouseButton1Down:Connect(function()
 	if writefileExploit() then
 		if #scroll_2:GetChildren() > 0 then
 			notify("Loading",'Hold on a sec')
 			local placeName = CleanFileName(MarketplaceService:GetProductInfo(PlaceId).Name)
-			local writelogs = '-- Infinite Yield Chat logs for "'..placeName..'"\n'
+			local writelogs = '-- Infinite Yield cchat logs for "'..placeName..'"\n'
 			for _, child in pairs(scroll_2:GetChildren()) do
 				writelogs = writelogs..'\n'..child.Text
 			end
@@ -3788,26 +3788,26 @@ SaveChatlogs.MouseButton1Down:Connect(function()
 			local fileext = 0
 			local function nameFile()
 				local file
-				pcall(function() file = readfile(placeName..' Chat Logs ('..fileext..').txt') end)
+				pcall(function() file = readfile(placeName..' cchat Logs ('..fileext..').txt') end)
 				if file then
 					fileext = fileext+1
 					nameFile()
 				else
-					writefileCooldown(placeName..' Chat Logs ('..fileext..').txt', writelogsFile)
+					writefileCooldown(placeName..' cchat Logs ('..fileext..').txt', writelogsFile)
 				end
 			end
 			nameFile()
-			notify('Chat Logs','Saved chat logs to the workspace folder within your exploit folder.')
+			notify('cchat Logs','Saved cchat logs to the workspace folder within your exploit folder.')
 		end
 	else
-		notify('Chat Logs','Your exploit does not support write file. You cannot save chat logs.')
+		notify('cchat Logs','Your exploit does not support write file. You cannot save cchat logs.')
 	end
 end)
 
 task.spawn(function()
 	coroutine.resume(coroutine.create(function()
-		local ChatEvents = ReplicatedStorage:WaitForChild("DefaultChatSystemChatEvents", math.huge)
-		local OnMessageEvent = ChatEvents:WaitForChild("OnMessageDoneFiltering", math.huge)
+		local cchatEvents = ReplicatedStorage:WaitForChild("DefaultcchatSystemcchatEvents", math.huge)
+		local OnMessageEvent = cchatEvents:WaitForChild("OnMessageDoneFiltering", math.huge)
         if OnMessageEvent:IsA("RemoteEvent") then
             OnMessageEvent.OnClientEvent:Connect(function(data)
                 if data ~= nil then
@@ -3820,7 +3820,7 @@ task.spawn(function()
                     if originalchannel == "Team" then
                         message = "/team " .. message
                     end
-                    eventEditor.FireEvent("OnChatted", player, message)
+                    eventEditor.FireEvent("Oncchatted", player, message)
                     if logsEnabled then
                         CreateLabel(player, message)
                     end
@@ -4162,23 +4162,23 @@ IndexContents = function(str,bool,cmdbar,Ianim)
 end
 
 PlayerGui = Players.LocalPlayer:FindFirstChildOfClass("PlayerGui")
-local chatbox
+local cchatbox
 task.spawn(function()
-	local success, result = pcall(function() chatbox = game.WaitForChild(PlayerGui, "Chat").Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar end)
+	local success, result = pcall(function() cchatbox = game.WaitForChild(PlayerGui, "cchat").Frame.cchatBarParentFrame.Frame.BoxFrame.Frame.cchatBar end)
 	if success then
-		local function chatboxFocused()
+		local function cchatboxFocused()
 			canvasPos = CMDsF.CanvasPosition
 		end
-		local chatboxFocusedC = chatbox.Focused:Connect(chatboxFocused)
+		local cchatboxFocusedC = cchatbox.Focused:Connect(cchatboxFocused)
 
 		local function Index()
-			if chatbox.Text:lower():sub(1,1) == prefix then
+			if cchatbox.Text:lower():sub(1,1) == prefix then
 				if SettingsOpen == true then
 					wait(0.2)
 					CMDsF.Visible = true
 					Settings:TweenPosition(UDim2.new(0, 0, 0, 220), "InOut", "Quart", 0.2, true, nil)
 				end
-				IndexContents(PlayerGui.Chat.Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar.Text:lower():sub(2),true)
+				IndexContents(PlayerGui.cchat.Frame.cchatBarParentFrame.Frame.BoxFrame.Frame.cchatBar.Text:lower():sub(2),true)
 			else
 				minimizeHolder()
 				if SettingsOpen == true then
@@ -4188,31 +4188,31 @@ task.spawn(function()
 				end
 			end
 		end
-		local chatboxFunc = chatbox:GetPropertyChangedSignal("Text"):Connect(Index)
+		local cchatboxFunc = cchatbox:GetPropertyChangedSignal("Text"):Connect(Index)
 
-		local function chatboxFocusLost(enterpressed)
-			if not enterpressed or chatbox.Text:lower():sub(1,1) ~= prefix then
+		local function cchatboxFocusLost(enterpressed)
+			if not enterpressed or cchatbox.Text:lower():sub(1,1) ~= prefix then
 				IndexContents('',true)
 			end
 			CMDsF.CanvasPosition = canvasPos
 			minimizeHolder()
 		end
-		local chatboxFocusLostC = chatbox.FocusLost:Connect(chatboxFocusLost)
+		local cchatboxFocusLostC = cchatbox.FocusLost:Connect(cchatboxFocusLost)
 
-		PlayerGui:WaitForChild("Chat").Frame.ChatBarParentFrame.ChildAdded:Connect(function(newbar)
+		PlayerGui:WaitForChild("cchat").Frame.cchatBarParentFrame.ChildAdded:Connect(function(newbar)
 			wait()
 			if newbar:FindFirstChild('BoxFrame') then
-				chatbox = PlayerGui:WaitForChild("Chat").Frame.ChatBarParentFrame.Frame.BoxFrame.Frame.ChatBar
-				if chatboxFocusedC then chatboxFocusedC:Disconnect() end
-				chatboxFocusedC = chatbox.Focused:Connect(chatboxFocused)
-				if chatboxFunc then chatboxFunc:Disconnect() end
-				chatboxFunc = chatbox:GetPropertyChangedSignal("Text"):Connect(Index)
-				if chatboxFocusLostC then chatboxFocusLostC:Disconnect() end
-				chatboxFocusLostC = chatbox.FocusLost:Connect(chatboxFocusLost)
+				cchatbox = PlayerGui:WaitForChild("cchat").Frame.cchatBarParentFrame.Frame.BoxFrame.Frame.cchatBar
+				if cchatboxFocusedC then cchatboxFocusedC:Disconnect() end
+				cchatboxFocusedC = cchatbox.Focused:Connect(cchatboxFocused)
+				if cchatboxFunc then cchatboxFunc:Disconnect() end
+				cchatboxFunc = cchatbox:GetPropertyChangedSignal("Text"):Connect(Index)
+				if cchatboxFocusLostC then cchatboxFocusLostC:Disconnect() end
+				cchatboxFocusLostC = cchatbox.FocusLost:Connect(cchatboxFocusLost)
 			end
 		end)
 		--else
-		--print('Custom chat detected. Will not provide suggestions for commands typed in the chat.')
+		--print('Custom cchat detected. Will not provide suggestions for commands typed in the cchat.')
 	end
 end)
 
@@ -4265,8 +4265,8 @@ CMDs[#CMDs + 1] = {NAME = 'copycreatorid / copycreator', DESC = 'Copies the crea
 CMDs[#CMDs + 1] = {NAME = 'setcreatorid / setcreator', DESC = 'Sets your userid to the creators ID'}
 CMDs[#CMDs + 1] = {NAME = 'noprompts', DESC = 'Prevents the game from showing you purchase/premium prompts'}
 CMDs[#CMDs + 1] = {NAME = 'showprompts', DESC = 'Allows the game to show purchase/premium prompts again'}
-CMDs[#CMDs + 1] = {NAME = 'enable [inventory/playerlist/chat/reset/all]', DESC = 'Toggles visibility of coregui items'}
-CMDs[#CMDs + 1] = {NAME = 'disable [inventory/playerlist/chat/reset/all]', DESC = 'Toggles visibility of coregui items'}
+CMDs[#CMDs + 1] = {NAME = 'enable [inventory/playerlist/cchat/reset/all]', DESC = 'Toggles visibility of coregui items'}
+CMDs[#CMDs + 1] = {NAME = 'disable [inventory/playerlist/cchat/reset/all]', DESC = 'Toggles visibility of coregui items'}
 CMDs[#CMDs + 1] = {NAME = 'showguis', DESC = 'Shows any invisible GUIs'}
 CMDs[#CMDs + 1] = {NAME = 'unshowguis', DESC = 'Undoes showguis'}
 CMDs[#CMDs + 1] = {NAME = 'hideguis', DESC = 'Hides any GUIs in PlayerGui'}
@@ -4353,19 +4353,19 @@ CMDs[#CMDs + 1] = {NAME = 'nowalltp / unwalltp', DESC = 'Disables walltp'}
 CMDs[#CMDs + 1] = {NAME = 'teleporttool / tptool', DESC = 'Gives you a teleport tool'}
 CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'logs', DESC = 'Opens the logs GUI'}
-CMDs[#CMDs + 1] = {NAME = 'chatlogs / clogs', DESC = 'Log what people say or whisper'}
+CMDs[#CMDs + 1] = {NAME = 'cchatlogs / clogs', DESC = 'Log what people say or whisper'}
 CMDs[#CMDs + 1] = {NAME = 'joinlogs / jlogs', DESC = 'Log when people join'}
-CMDs[#CMDs + 1] = {NAME = 'chat / say [text]', DESC = 'Makes you chat a string (possible mute bypass)'}
-CMDs[#CMDs + 1] = {NAME = 'spam [text]', DESC = 'Makes you spam the chat'}
+CMDs[#CMDs + 1] = {NAME = 'cchat / say [text]', DESC = 'Makes you cchat a string (possible mute bypass)'}
+CMDs[#CMDs + 1] = {NAME = 'spam [text]', DESC = 'Makes you spam the cchat'}
 CMDs[#CMDs + 1] = {NAME = 'unspam', DESC = 'Turns off spam'}
 CMDs[#CMDs + 1] = {NAME = 'whisper / pm [plr] [text]', DESC = 'Makes you whisper a string to someone (possible mute bypass)'}
 CMDs[#CMDs + 1] = {NAME = 'pmspam [plr] [text]', DESC = 'Makes you spam a players whispers'}
 CMDs[#CMDs + 1] = {NAME = 'unpmspam [plr]', DESC = 'Turns off pm spam'}
 CMDs[#CMDs + 1] = {NAME = 'spamspeed [num]', DESC = 'How quickly you spam (default is 1)'}
-CMDs[#CMDs + 1] = {NAME = 'bubblechat (CLIENT)', DESC = 'Enables bubble chat for your client'}
-CMDs[#CMDs + 1] = {NAME = 'unbubblechat / nobubblechat', DESC = 'Disables the bubblechat command'}
-CMDs[#CMDs + 1] = {NAME = 'safechat', DESC = 'Enables safe chat'}
-CMDs[#CMDs + 1] = {NAME = 'nosafechat / disablesafechat', DESC = 'Disables safechat'}
+CMDs[#CMDs + 1] = {NAME = 'bubblecchat (CLIENT)', DESC = 'Enables bubble cchat for your client'}
+CMDs[#CMDs + 1] = {NAME = 'unbubblecchat / nobubblecchat', DESC = 'Disables the bubblecchat command'}
+CMDs[#CMDs + 1] = {NAME = 'safecchat', DESC = 'Enables safe cchat'}
+CMDs[#CMDs + 1] = {NAME = 'nosafecchat / disablesafecchat', DESC = 'Disables safecchat'}
 CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'esp', DESC = 'View all players and their status'}
 CMDs[#CMDs + 1] = {NAME = 'noesp / unesp', DESC = 'Removes esp'}
@@ -4452,9 +4452,9 @@ CMDs[#CMDs + 1] = {NAME = 'nolight / unlight', DESC = 'Removes dynamic light fro
 CMDs[#CMDs + 1] = {NAME = '', DESC = ''}
 CMDs[#CMDs + 1] = {NAME = 'inspect / examine [plr]', DESC = 'Opens InspectMenu for a certain player'}
 CMDs[#CMDs + 1] = {NAME = 'age [plr]', DESC = 'Tells you the age of a player'}
-CMDs[#CMDs + 1] = {NAME = 'chatage [plr]', DESC = 'Chats the age of a player'}
+CMDs[#CMDs + 1] = {NAME = 'cchatage [plr]', DESC = 'cchats the age of a player'}
 CMDs[#CMDs + 1] = {NAME = 'joindate / jd [plr]', DESC = 'Tells you the date the player joined Roblox'}
-CMDs[#CMDs + 1] = {NAME = 'chatjoindate / cjd [plr]', DESC = 'Chats the date the player joined Roblox'}
+CMDs[#CMDs + 1] = {NAME = 'cchatjoindate / cjd [plr]', DESC = 'cchats the date the player joined Roblox'}
 CMDs[#CMDs + 1] = {NAME = 'copyname / copyuser [plr]', DESC = 'Copies a players full username to your clipboard'}
 CMDs[#CMDs + 1] = {NAME = 'userid / id [plr]', DESC = 'Notifies a players user ID'}
 CMDs[#CMDs + 1] = {NAME = 'copyuserid / copyid [plr]', DESC = 'Copies a players user ID to your clipboard'}
@@ -5355,7 +5355,7 @@ UserInputService.InputBegan:Connect(function(input,gameProcessed)
 	end
 end)
 
-Players.LocalPlayer.Chatted:Connect(function()
+Players.LocalPlayer.cchatted:Connect(function()
 	wait()
 	if lastEnteredString then
 		local message = lastEnteredString
@@ -7306,8 +7306,8 @@ addcmd('enable',{},function(args, speaker)
 		StarterGui:SetCoreGuiEnabled('Backpack', true)
 	elseif args[1]:lower() == 'playerlist' then
 		StarterGui:SetCoreGuiEnabled('PlayerList', true)
-	elseif args[1]:lower() == 'chat' then
-		StarterGui:SetCoreGuiEnabled('Chat', true)
+	elseif args[1]:lower() == 'cchat' then
+		StarterGui:SetCoreGuiEnabled('cchat', true)
 	elseif args[1]:lower() == 'reset' then
 		StarterGui:SetCore('ResetButtonCallback', true)
 	elseif args[1]:lower() == 'all' then
@@ -7320,8 +7320,8 @@ addcmd('disable',{},function(args, speaker)
 		StarterGui:SetCoreGuiEnabled('Backpack', false)
 	elseif args[1]:lower() == 'playerlist' then
 		StarterGui:SetCoreGuiEnabled('PlayerList', false)
-	elseif args[1]:lower() == 'chat' then
-		StarterGui:SetCoreGuiEnabled('Chat', false)
+	elseif args[1]:lower() == 'cchat' then
+		StarterGui:SetCoreGuiEnabled('cchat', false)
 	elseif args[1]:lower() == 'reset' then
 		StarterGui:SetCore('ResetButtonCallback', false)
 	elseif args[1]:lower() == 'all' then
@@ -8373,15 +8373,15 @@ addcmd('age',{},function(args, speaker)
 	notify('Account Age',table.concat(ages, ',\n'))
 end)
 
-addcmd('chatage',{},function(args, speaker)
+addcmd('cchatage',{},function(args, speaker)
 	local players = getPlayer(args[1], speaker)
 	local ages = {}
 	for i,v in pairs(players) do
 		local p = Players[v]
 		table.insert(ages, p.Name.."'s age is: "..p.AccountAge)
 	end
-	local chatString = table.concat(ages, ', ')
-	ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(chatString, "All")
+	local cchatString = table.concat(ages, ', ')
+	ReplicatedStorage.DefaultcchatSystemcchatEvents.SayMessageRequest:FireServer(cchatString, "All")
 end)
 
 addcmd('joindate',{'jd'},function(args, speaker)
@@ -8398,7 +8398,7 @@ addcmd('joindate',{'jd'},function(args, speaker)
 	notify('Join Date (Month/Day/Year)',table.concat(dates, ',\n'))
 end)
 
-addcmd('chatjoindate',{'cjd'},function(args, speaker)
+addcmd('cchatjoindate',{'cjd'},function(args, speaker)
 	local players = getPlayer(args[1], speaker)
 	local dates = {}
 	notify("Loading",'Hold on a sec')
@@ -8409,8 +8409,8 @@ addcmd('chatjoindate',{'cjd'},function(args, speaker)
 		local splitDates = string.split(date,"-")
 		table.insert(dates,Players[v].Name.." joined: "..splitDates[2].."/"..splitDates[3].."/"..splitDates[1])
 	end
-	local chatString = table.concat(dates, ', ')
-	ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(chatString, "All")
+	local cchatString = table.concat(dates, ', ')
+	ReplicatedStorage.DefaultcchatSystemcchatEvents.SayMessageRequest:FireServer(cchatString, "All")
 end)
 
 addcmd('copyname',{'copyuser'},function(args, speaker)
@@ -10043,9 +10043,9 @@ addcmd('headsit',{},function(args, speaker)
 	end
 end)
 
-addcmd('chat',{'say'},function(args, speaker)
+addcmd('cchat',{'say'},function(args, speaker)
 	local cString = getstring(1)
-	ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(cString, "All")
+	ReplicatedStorage.DefaultcchatSystemcchatEvents.SayMessageRequest:FireServer(cString, "All")
 end)
 
 
@@ -10055,7 +10055,7 @@ addcmd('spam',{},function(args, speaker)
 	spamming = true
 	local spamstring = getstring(1)
 	repeat wait(spamspeed)
-		ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(spamstring, "All")
+		ReplicatedStorage.DefaultcchatSystemcchatEvents.SayMessageRequest:FireServer(spamstring, "All")
 	until spamming == false
 end)
 
@@ -10069,7 +10069,7 @@ addcmd('whisper',{'pm'},function(args, speaker)
 		task.spawn(function()
 			local plrName = Players[v].Name
 			local pmstring = getstring(2)
-			ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/w "..plrName.." "..pmstring, "All")
+			ReplicatedStorage.DefaultcchatSystemcchatEvents.SayMessageRequest:FireServer("/w "..plrName.." "..pmstring, "All")
 		end)
 	end
 end)
@@ -10086,7 +10086,7 @@ addcmd('pmspam',{},function(args, speaker)
 			repeat
 				if Players:FindFirstChild(v) then
 					wait(spamspeed)
-					ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("/w "..plrName.." "..pmspamstring, "All")
+					ReplicatedStorage.DefaultcchatSystemcchatEvents.SayMessageRequest:FireServer("/w "..plrName.." "..pmspamstring, "All")
 				else
 					for a,b in pairs(pmspamming) do if b == plrName then table.remove(pmspamming, a) end end
 				end
@@ -10115,20 +10115,20 @@ addcmd('spamspeed',{},function(args, speaker)
 	end
 end)
 
-addcmd('bubblechat',{},function(args, speaker)
-	ChatService.BubbleChatEnabled = true
+addcmd('bubblecchat',{},function(args, speaker)
+	cchatService.BubblecchatEnabled = true
 end)
 
-addcmd('unbubblechat',{'nobubblechat'},function(args, speaker)
-	ChatService.BubbleChatEnabled = false
+addcmd('unbubblecchat',{'nobubblecchat'},function(args, speaker)
+	cchatService.BubblecchatEnabled = false
 end)
 
-addcmd('safechat',{},function(args, speaker)
-	speaker:SetSuperSafeChat(true)
+addcmd('safecchat',{},function(args, speaker)
+	speaker:SetSuperSafecchat(true)
 end)
 
-addcmd('nosafechat',{'disablesafechat','unsafechat'},function(args, speaker)
-	speaker:SetSuperSafeChat(false)
+addcmd('nosafecchat',{'disablesafecchat','unsafecchat'},function(args, speaker)
+	speaker:SetSuperSafecchat(false)
 end)
 
 addcmd('blockhead',{},function(args, speaker)
@@ -11061,26 +11061,26 @@ addcmd('logs',{},function(args, speaker)
 	logs:TweenPosition(UDim2.new(0, 0, 1, -265), "InOut", "Quart", 0.3, true, nil)
 end)
 
-addcmd('chatlogs',{'clogs'},function(args, speaker)
+addcmd('cchatlogs',{'clogs'},function(args, speaker)
 	join.Visible = false
-	chat.Visible = true
-	table.remove(shade3,table.find(shade3,selectChat))
+	cchat.Visible = true
+	table.remove(shade3,table.find(shade3,selectcchat))
 	table.remove(shade2,table.find(shade2,selectJoin))
-	table.insert(shade2,selectChat)
+	table.insert(shade2,selectcchat)
 	table.insert(shade3,selectJoin)
 	selectJoin.BackgroundColor3 = currentShade3
-	selectChat.BackgroundColor3 = currentShade2
+	selectcchat.BackgroundColor3 = currentShade2
 	logs:TweenPosition(UDim2.new(0, 0, 1, -265), "InOut", "Quart", 0.3, true, nil)
 end)
 
 addcmd('joinlogs',{'jlogs'},function(args, speaker)
-	chat.Visible = false
+	cchat.Visible = false
 	join.Visible = true	
 	table.remove(shade3,table.find(shade3,selectJoin))
-	table.remove(shade2,table.find(shade2,selectChat))
+	table.remove(shade2,table.find(shade2,selectcchat))
 	table.insert(shade2,selectJoin)
-	table.insert(shade3,selectChat)
-	selectChat.BackgroundColor3 = currentShade3
+	table.insert(shade3,selectcchat)
+	selectcchat.BackgroundColor3 = currentShade3
 	selectJoin.BackgroundColor3 = currentShade2
 	logs:TweenPosition(UDim2.new(0, 0, 1, -265), "InOut", "Quart", 0.3, true, nil)
 end)
@@ -12000,7 +12000,7 @@ eventEditor.RegisterEvent("OnKilled",{
 eventEditor.RegisterEvent("OnJoin",{
 	{Type="Player",Name="Player Filter ($1)",Default = 1}
 })
-eventEditor.RegisterEvent("OnChatted",{
+eventEditor.RegisterEvent("Oncchatted",{
 	{Type="Player",Name="Player Filter ($1)",Default = 1},
 	{Type="String",Name="Message Filter ($2)"}
 })
