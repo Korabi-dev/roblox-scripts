@@ -15,6 +15,30 @@
             ]
         },
         {
+            "name": "message",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "m",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "h",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
+            "name": "hint",
+            "args": [
+                "Person299"
+            ]
+        },
+        {
             "name": "heal",
             "args": [
                 "Person299"
